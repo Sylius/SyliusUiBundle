@@ -2,10 +2,7 @@
 # (c) Paweł Jędrzejewski
 
 sylius:
-  form:
-    login:
-      password: Kata sandi
   ui:
-    enabled: Diaktifkan
+    enabled: Aktiverad
     "no": false
     "yes": true
