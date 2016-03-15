@@ -4,8 +4,7 @@
 sylius:
   form:
     login:
-      password: Kata sandi
+      remember_me: 아이디/암호 저장
   ui:
-    enabled: Diaktifkan
     "no": false
     "yes": true
