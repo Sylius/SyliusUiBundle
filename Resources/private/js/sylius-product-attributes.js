@@ -79,7 +79,7 @@ const copyValueToAllLanguages = function copyValueToAllLanguages() {
         if (input.getAttribute('type') === 'checkbox') {
           input.checked = $masterAttributeInputs[i].checked;
         } else {
-          input.value = $masterAttributeInputs[i].value;
+          $(input).val($masterAttributeInputs.eq(i).val());
         }
       });
     });
