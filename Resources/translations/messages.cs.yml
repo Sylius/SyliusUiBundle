@@ -808,7 +808,7 @@ sylius:
         taxation_settings: 'Nastavení zdanění'
         taxes: 'DPH'
         taxes_total: 'Daně celkem'
-        taxonomy: 'Taxy DPH'
+        taxonomy: 'Taxonomie'
         taxons: 'Taxony'
         terms_and_conditions: 'Obchodní podmínky'
         text: 'Text'
