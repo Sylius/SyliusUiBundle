@@ -83,7 +83,7 @@ const copyValueToAllLanguages = function copyValueToAllLanguages() {
             input[x].selected = $masterAttributeInputs[i][x].selected;
           }
         } else {
-          input.value = $masterAttributeInputs[i].value;
+          $(input).val($masterAttributeInputs.eq(i).val());
         }
       });
     });
