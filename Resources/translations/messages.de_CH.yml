@@ -347,7 +347,7 @@ sylius:
         failed: 'Fehlgeschlagen'
         faqs: 'FAQs'
         female: 'Weiblich'
-        fill_in_your_billing_and_shipping_addresses: 'Rechungs.- und Lieferanschrift'
+        fill_in_your_billing_and_shipping_addresses: 'Rechnungs- und Lieferanschrift'
         filter: 'Filter'
         filters: 'Filter'
         first_name: 'Vorname'
