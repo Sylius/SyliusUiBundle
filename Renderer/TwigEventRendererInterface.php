@@ -13,10 +13,13 @@ declare(strict_types=1);
 
 namespace Sylius\Bundle\UiBundle\Renderer;
 
-interface TemplateEventRendererInterface
+interface TwigEventRendererInterface
 {
     /**
      * @param non-empty-list<string> $eventNames
+     * @param array<string, mixed> $context
      */
     public function render(array $eventNames, array $context = []): string;
 }
+
+class_alias(TwigEventRendererInterface::class, '\Sylius\Bundle\UiBundle\Renderer\TemplateEventRendererInterface');
