@@ -42,6 +42,12 @@ $(document).ready(() => {
   $('.ui.card .dimmable.image, .ui.cards .card .dimmable.image').dimmer({ on: 'hover' });
   $('.ui.rating').rating('disable');
 
+  $(window).on('pageshow', (event) => {
+    if (event.originalEvent.persisted) {
+      $('form.loadable').removeClass('loading');
+    }
+  });
+  
   $('form.loadable button[type=submit]').on('click', (event) => {
     $(event.currentTarget).closest('form').addClass('loading');
   });
