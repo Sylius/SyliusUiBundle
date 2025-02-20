@@ -39,7 +39,7 @@ trait LiveCollectionTrait
             $data = [];
         }
 
-        $index = [] !== $data ? count($data) : 0;
+        $index = [] !== $data ? max(array_keys($data)) + 1 : 0;
         $propertyAccessor->setValue(
             $this->formValues,
             sprintf('%s[%s]', $propertyPath, $index),
