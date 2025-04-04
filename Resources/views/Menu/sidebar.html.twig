@@ -42,9 +42,14 @@
     </div>
 </div>
 {% else %}
-<a class="item {% if attributes.class is defined %}{{ attributes.class }}{% endif %}" href="{{ item.uri }}" {% for linkAttributeName, linkAttributeValue in item.linkAttributes %}{{ linkAttributeName }}="{{ linkAttributeValue }}"{% endfor %}>
-    {{ block('icon') }}
-    {{ item.label|trans }}
+<a class="item justify-content-lg-between gap-2 text-truncate {% if attributes.class is defined %}{{ attributes.class }}{% endif %}" href="{{ item.uri }}" {% for linkAttributeName, linkAttributeValue in item.linkAttributes %}{{ linkAttributeName }}="{{ linkAttributeValue }}"{% endfor %}>
+    <div class="sidebar-badge">
+        {{ block('icon') }}
+        {{ item.label|trans }}
+        {% if item.extra('plus_logo') is not empty %}
+            <img src="{{ asset('build/admin/images/sylius-plus-sidebar.svg', 'admin') }}" alt="Sylius Plus" class="navbar-plus-badge position-absolute" />
+        {% endif %}
+    </div>
 </a>
 {% endif %}
 {% endblock %}
