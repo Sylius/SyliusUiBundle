@@ -22,13 +22,13 @@ final class ConfigurationTest extends TestCase
 {
     use ConfigurationTestCaseTrait;
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_allows_empty_twig_ux_configuration(): void
     {
         $this->assertConfigurationIsValid([['twig_ux' => []]], 'twig_ux');
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_allows_to_configure_anonymous_component_template_prefixes(): void
     {
         $this->assertProcessedConfigurationEquals(
@@ -40,7 +40,7 @@ final class ConfigurationTest extends TestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_allows_to_configure_live_component_tags(): void
     {
         $this->assertProcessedConfigurationEquals(
@@ -52,7 +52,7 @@ final class ConfigurationTest extends TestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_allows_to_configure_component_default_template(): void
     {
         $this->assertProcessedConfigurationEquals(
@@ -64,7 +64,7 @@ final class ConfigurationTest extends TestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_uses_default_component_default_template_when_not_configured(): void
     {
         $this->assertProcessedConfigurationEquals(
@@ -76,7 +76,7 @@ final class ConfigurationTest extends TestCase
         );
     }
 
-    /** @test */
+    #[\PHPUnit\Framework\Attributes\Test]
     public function it_throws_an_exception_if_live_component_tags_route_is_missing(): void
     {
         $this->assertConfigurationIsInvalid(
