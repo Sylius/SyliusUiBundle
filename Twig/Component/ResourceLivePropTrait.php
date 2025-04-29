@@ -25,7 +25,7 @@ trait ResourceLivePropTrait
     public function hydrateResource(mixed $value): ?ResourceInterface
     {
         if (null !== $value) {
-            return :wq$this->repository->find($value);
+            return $this->repository->find($value);
         }
 
         return null;
