@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace DependencyInjection\Compiler;
+namespace Tests\Sylius\Bundle\UiBundle\DependencyInjection\Compiler;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractCompilerPassTestCase;
 use Sylius\Bundle\UiBundle\DependencyInjection\Compiler\LiveComponentTagPass;

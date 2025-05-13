@@ -48,7 +48,6 @@
     "require-dev": {
         "matthiasnoback/symfony-config-test": "^5.1",
         "matthiasnoback/symfony-dependency-injection-test": "^5.1",
-        "phpspec/phpspec": "^7.5",
         "phpunit/phpunit": "^10.5",
         "symfony/dependency-injection": "^6.4.1 || ^7.2",
         "symfony/form": "^6.4.1 || ^7.2",
@@ -71,6 +70,11 @@
     "autoload": {
         "psr-4": {
             "Sylius\\Bundle\\UiBundle\\": ""
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\Sylius\\Bundle\\UiBundle\\": "tests/"
         }
     },
     "repositories": [

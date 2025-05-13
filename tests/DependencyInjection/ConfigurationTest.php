@@ -11,7 +11,7 @@
 
 declare(strict_types=1);
 
-namespace Sylius\Bundle\UiBundle\Tests\DependencyInjection;
+namespace Tests\Sylius\Bundle\UiBundle\DependencyInjection;
 
 use Matthias\SymfonyConfigTest\PhpUnit\ConfigurationTestCaseTrait;
 use PHPUnit\Framework\Attributes\Test;
