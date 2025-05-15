@@ -16,13 +16,12 @@ namespace Tests\Sylius\Bundle\UiBundle\Twig\ErrorRenderer;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 use Sylius\Bundle\UiBundle\Twig\ErrorRenderer\TwigErrorRenderer;
-use Sylius\Bundle\UiBundle\Twig\ErrorTemplateFinder\ErrorTemplateFinderInterface as AdminErrorTemplateFinder;
+use Sylius\Bundle\UiBundle\Twig\ErrorTemplateFinder\ErrorTemplateFinderInterface;
 use Symfony\Bridge\Twig\ErrorRenderer\TwigErrorRenderer as DecoratedTwigErrorRenderer;
 use Symfony\Component\ErrorHandler\ErrorRenderer\ErrorRendererInterface;
 use Symfony\Component\ErrorHandler\Exception\FlattenException;
 use Symfony\Component\HttpKernel\Exception\HttpException;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
-use Throwable;
 use Twig\Environment;
 
 final class TwigErrorRendererTest extends TestCase
@@ -31,9 +30,9 @@ final class TwigErrorRendererTest extends TestCase
 
     private Environment&MockObject $twig;
 
-    private AdminErrorTemplateFinder&MockObject $shopTemplateFinder;
+    private ErrorTemplateFinderInterface&MockObject $shopTemplateFinder;
 
-    private AdminErrorTemplateFinder&MockObject $adminTemplateFinder;
+    private ErrorTemplateFinderInterface&MockObject $adminTemplateFinder;
 
     private TwigErrorRenderer $twigErrorRenderer;
 
@@ -41,8 +40,8 @@ final class TwigErrorRendererTest extends TestCase
     {
         $this->decoratedTwigErrorRenderer = $this->createMock(DecoratedTwigErrorRenderer::class);
         $this->twig = $this->createMock(Environment::class);
-        $this->shopTemplateFinder = $this->createMock(AdminErrorTemplateFinder::class);
-        $this->adminTemplateFinder = $this->createMock(AdminErrorTemplateFinder::class);
+        $this->shopTemplateFinder = $this->createMock(ErrorTemplateFinderInterface::class);
+        $this->adminTemplateFinder = $this->createMock(ErrorTemplateFinderInterface::class);
         $this->twigErrorRenderer = new TwigErrorRenderer(
             $this->decoratedTwigErrorRenderer,
             $this->twig,
@@ -58,8 +57,8 @@ final class TwigErrorRendererTest extends TestCase
 
     public function testRendersUsingDecoratedRendererIfDebug(): void
     {
-        /** @var Throwable&MockObject $exception */
-        $exception = $this->createMock(Throwable::class);
+        /** @var \Throwable&MockObject $exception */
+        $exception = $this->createMock(\Throwable::class);
         /** @var FlattenException&MockObject $flattenException */
         $flattenException = $this->createMock(FlattenException::class);
 
