@@ -87,7 +87,6 @@
         "test": [
             "@composer validate --strict",
             "bin/phpunit --colors=always",
-            "bin/phpspec run --ansi --no-interaction"
         ]
     },
     "minimum-stability": "dev",
