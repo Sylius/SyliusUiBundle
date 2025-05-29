@@ -3,30 +3,30 @@
 
 sylius:
     channel:
-        delete_error: 'The channel cannot be deleted. At least one enabled channel is required.'
+        delete_error: 'Kanalen kan ikke slettes. Minst én aktiv kanal kreves.'
     checkout:
-        complete_error: 'There was an unexpected problem with completing an order. Please, try to place your order again.'
+        complete_error: 'Det oppstod et uventet problem med å fullføre bestillingen. Vennligst prøv å legge inn bestillingen på nytt.'
     contact:
-        request_success: 'Your contact request has been submitted successfully.'
-        request_error: 'A problem occurred while sending the contact request. Please try again later.'
+        request_success: 'Din kontaktforespørsel er sendt inn med suksess.'
+        request_error: 'Det oppstod et problem under sending av kontaktforespørselen. Vennligst prøv igjen senere.'
     customer:
-        add_address: 'Address has been successfully added.'
-        impersonate: 'Successfully impersonated customer %name%.'
-        set_address_as_default: 'Address has been set as default.'
+        add_address: 'Adresse er lagt til med suksess.'
+        impersonate: 'Kunde %name% ble vellykket impersonert.'
+        set_address_as_default: 'Adresse er satt som standard.'
     order:
-        apply_state_machine_transition_error: 'There was an unexpected problem with updating an order. Please, try to update order again.'
-        promotion_integrity: 'You are no longer eligible for this promotion %promotionName%.'
-        total_integrity: 'Your order total has been changed, check your order information and confirm it again.'
-        update_error: 'There was an unexpected problem with updating an order. Please, try to update order again.'
+        apply_state_machine_transition_error: 'Det oppstod et uventet problem med å oppdatere bestillingen. Vennligst prøv å oppdatere bestillingen på nytt.'
+        promotion_integrity: 'Du er ikke lenger kvalifisert for denne kampanjen %promotionName%.'
+        total_integrity: 'Din bestillingssum har endret seg, sjekk bestillingsinformasjonen og bekreft på nytt.'
+        update_error: 'Det oppstod et uventet problem med å oppdatere bestillingen. Vennligst prøv å oppdatere bestillingen på nytt.'
     payment:
-        apply_state_machine_transition_error: 'There was an unexpected problem with updating a payment. Please, try to update payment again.'
+        apply_state_machine_transition_error: 'Det oppstod et uventet problem med å oppdatere betalingen. Vennligst prøv å oppdatere betalingen på nytt.'
     product:
-        in_use_by_promotion_rule: 'Cannot delete a product that is in use by a promotion rule.'
-        out_of_stock: 'There is only %quantity% of this product in the stock.'
+        in_use_by_promotion_rule: 'Kan ikke slette et produkt som er i bruk av en kampanjeregel.'
+        out_of_stock: 'Det er bare %quantity% av dette produktet på lager.'
     product_variant:
-        update_error: 'There was an unexpected problem with updating a product variant. Please, try to update product variant again.'
+        update_error: 'Det oppstod et uventet problem med å oppdatere produktvarianten. Vennligst prøv å oppdatere produktvarianten på nytt.'
     promotion:
-        update_rules: 'Some rules of the promotions with codes %codes% have been updated.'
+        update_rules: 'Noen regler for kampanjer med kodene %codes% har blitt oppdatert.'
     taxon:
-        in_use_by_promotion_rule: 'Cannot delete a taxon that is in use by a promotion rule.'
-        menu_taxon_delete: 'You cannot delete a menu taxon of any channel.'
+        in_use_by_promotion_rule: 'Kan ikke slette en taksonomi som er i bruk av en kampanjeregel.'
+        menu_taxon_delete: 'Du kan ikke slette en meny-taksonomi for noen kanal.'
