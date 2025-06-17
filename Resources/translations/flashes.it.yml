@@ -5,26 +5,26 @@ sylius:
     channel:
         delete_error: 'Il canale non può essere eliminato. È richiesto almeno un canale abilitato.'
     checkout:
-        complete_error: 'Si è verificato un problema imprevisto nel completare un ordine. Per favore, prova a effettuare nuovamente l\'ordine.'
+        complete_error: 'Si è verificato un problema imprevisto nel completare un ordine. Per favore, prova a effettuare nuovamente l''ordine.'
     contact:
         request_success: 'La tua richiesta di contatto è stata inviata con successo.'
-        request_error: 'Si è verificato un problema nell\'invio della richiesta di contatto. Per favore riprova più tardi.'
+        request_error: 'Si è verificato un problema nell''invio della richiesta di contatto. Per favore riprova più tardi.'
     customer:
-        add_address: 'L\'indirizzo è stato aggiunto con successo.'
+        add_address: 'L''indirizzo è stato aggiunto con successo.'
         impersonate: 'Cliente %name% impersonato con successo.'
-        set_address_as_default: 'L\'indirizzo è stato impostato come predefinito.'
+        set_address_as_default: 'L''indirizzo è stato impostato come predefinito.'
     order:
-        apply_state_machine_transition_error: 'Si è verificato un problema imprevisto nell\'aggiornare un ordine. Per favore, prova a aggiornare l\'ordine di nuovo.'
+        apply_state_machine_transition_error: 'Si è verificato un problema imprevisto nell''aggiornare un ordine. Per favore, prova a aggiornare l''ordine di nuovo.'
         promotion_integrity: 'Non sei più idoneo per questa promozione %promotionName%.'
-        total_integrity: 'Il totale dell\'ordine è stato modificato, verifica le informazioni dell\'ordine e conferma di nuovo.'
-        update_error: 'Si è verificato un problema imprevisto nell\'aggiornare un ordine. Per favore, prova a aggiornare l\'ordine di nuovo.'
+        total_integrity: 'Il totale dell''ordine è stato modificato, verifica le informazioni dell''ordine e conferma di nuovo.'
+        update_error: 'Si è verificato un problema imprevisto nell''aggiornare un ordine. Per favore, prova a aggiornare l''ordine di nuovo.'
     payment:
-        apply_state_machine_transition_error: 'Si è verificato un problema imprevisto nell\'aggiornare un pagamento. Per favore, prova a aggiornare il pagamento di nuovo.'
+        apply_state_machine_transition_error: 'Si è verificato un problema imprevisto nell''aggiornare un pagamento. Per favore, prova a aggiornare il pagamento di nuovo.'
     product:
         in_use_by_promotion_rule: 'Impossibile eliminare un prodotto che è utilizzato da una regola di promozione.'
-        out_of_stock: 'C\'è solo %quantity% di questo prodotto in magazzino.'
+        out_of_stock: 'C''è solo %quantity% di questo prodotto in magazzino.'
     product_variant:
-        update_error: 'Si è verificato un problema imprevisto nell\'aggiornare una variante di prodotto. Per favore, prova a aggiornare la variante di prodotto di nuovo.'
+        update_error: 'Si è verificato un problema imprevisto nell''aggiornare una variante di prodotto. Per favore, prova a aggiornare la variante di prodotto di nuovo.'
     promotion:
         update_rules: 'Alcune regole delle promozioni con i codici %codes% sono state aggiornate.'
     taxon:
